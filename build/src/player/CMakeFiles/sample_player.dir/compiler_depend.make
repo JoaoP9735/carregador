@@ -22485,6 +22485,7 @@ src/player/CMakeFiles/sample_player.dir/planner/clear_ball.cpp.o: /home/joao/Doc
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/bits/list.tcc \
   /usr/include/c++/11/bits/locale_classes.h \
   /usr/include/c++/11/bits/locale_classes.tcc \
   /usr/include/c++/11/bits/locale_facets.h \
@@ -22516,6 +22517,7 @@ src/player/CMakeFiles/sample_player.dir/planner/clear_ball.cpp.o: /home/joao/Doc
   /usr/include/c++/11/bits/stl_iterator.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/stl_pair.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/stl_relops.h \
@@ -22558,6 +22560,7 @@ src/player/CMakeFiles/sample_player.dir/planner/clear_ball.cpp.o: /home/joao/Doc
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/limits \
+  /usr/include/c++/11/list \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/new \
   /usr/include/c++/11/ostream \
@@ -22700,9 +22703,15 @@ src/player/CMakeFiles/sample_player.dir/planner/clear_ball.cpp.o: /home/joao/Doc
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/local/include/rcsc/common/player_type.h \
   /usr/local/include/rcsc/game_time.h \
   /usr/local/include/rcsc/geom/angle_deg.h \
   /usr/local/include/rcsc/geom/vector_2d.h \
+  /usr/local/include/rcsc/player/abstract_player_object.h \
+  /usr/local/include/rcsc/player/localization.h \
+  /usr/local/include/rcsc/player/visual_sensor.h \
+  /usr/local/include/rcsc/rcg/types.h \
+  /usr/local/include/rcsc/soccer_math.h \
   /usr/local/include/rcsc/types.h
 
 src/player/CMakeFiles/sample_player.dir/planner/clear_generator.cpp.o: /home/joao/Documents/RedDragons2D/src/player/planner/clear_generator.cpp \
@@ -23066,6 +23075,7 @@ src/player/CMakeFiles/sample_player.dir/planner/cooperative_action.cpp.o: /home/
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/bits/list.tcc \
   /usr/include/c++/11/bits/locale_classes.h \
   /usr/include/c++/11/bits/locale_classes.tcc \
   /usr/include/c++/11/bits/locale_facets.h \
@@ -23097,6 +23107,7 @@ src/player/CMakeFiles/sample_player.dir/planner/cooperative_action.cpp.o: /home/
   /usr/include/c++/11/bits/stl_iterator.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/stl_pair.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/stl_relops.h \
@@ -23139,6 +23150,7 @@ src/player/CMakeFiles/sample_player.dir/planner/cooperative_action.cpp.o: /home/
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/limits \
+  /usr/include/c++/11/list \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/new \
   /usr/include/c++/11/ostream \
@@ -23281,9 +23293,15 @@ src/player/CMakeFiles/sample_player.dir/planner/cooperative_action.cpp.o: /home/
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/local/include/rcsc/common/player_type.h \
   /usr/local/include/rcsc/game_time.h \
   /usr/local/include/rcsc/geom/angle_deg.h \
   /usr/local/include/rcsc/geom/vector_2d.h \
+  /usr/local/include/rcsc/player/abstract_player_object.h \
+  /usr/local/include/rcsc/player/localization.h \
+  /usr/local/include/rcsc/player/visual_sensor.h \
+  /usr/local/include/rcsc/rcg/types.h \
+  /usr/local/include/rcsc/soccer_math.h \
   /usr/local/include/rcsc/types.h
 
 src/player/CMakeFiles/sample_player.dir/planner/cross_generator.cpp.o: /home/joao/Documents/RedDragons2D/src/player/planner/cross_generator.cpp \
@@ -23694,6 +23712,7 @@ src/player/CMakeFiles/sample_player.dir/planner/dribble.cpp.o: /home/joao/Docume
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/bits/list.tcc \
   /usr/include/c++/11/bits/locale_classes.h \
   /usr/include/c++/11/bits/locale_classes.tcc \
   /usr/include/c++/11/bits/locale_facets.h \
@@ -23725,6 +23744,7 @@ src/player/CMakeFiles/sample_player.dir/planner/dribble.cpp.o: /home/joao/Docume
   /usr/include/c++/11/bits/stl_iterator.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/stl_pair.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/stl_relops.h \
@@ -23768,6 +23788,7 @@ src/player/CMakeFiles/sample_player.dir/planner/dribble.cpp.o: /home/joao/Docume
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/limits \
+  /usr/include/c++/11/list \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/new \
   /usr/include/c++/11/ostream \
@@ -23921,6 +23942,7 @@ src/player/CMakeFiles/sample_player.dir/planner/dribble.cpp.o: /home/joao/Docume
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/local/include/rcsc/common/player_type.h \
   /usr/local/include/rcsc/common/server_param.h \
   /usr/local/include/rcsc/game_time.h \
   /usr/local/include/rcsc/geom/angle_deg.h \
@@ -23930,6 +23952,11 @@ src/player/CMakeFiles/sample_player.dir/planner/dribble.cpp.o: /home/joao/Docume
   /usr/local/include/rcsc/geom/size_2d.h \
   /usr/local/include/rcsc/geom/vector_2d.h \
   /usr/local/include/rcsc/math_util.h \
+  /usr/local/include/rcsc/player/abstract_player_object.h \
+  /usr/local/include/rcsc/player/localization.h \
+  /usr/local/include/rcsc/player/visual_sensor.h \
+  /usr/local/include/rcsc/rcg/types.h \
+  /usr/local/include/rcsc/soccer_math.h \
   /usr/local/include/rcsc/types.h
 
 src/player/CMakeFiles/sample_player.dir/planner/field_analyzer.cpp.o: /home/joao/Documents/RedDragons2D/src/player/planner/field_analyzer.cpp \
@@ -24292,6 +24319,7 @@ src/player/CMakeFiles/sample_player.dir/planner/hold_ball.cpp.o: /home/joao/Docu
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/bits/list.tcc \
   /usr/include/c++/11/bits/locale_classes.h \
   /usr/include/c++/11/bits/locale_classes.tcc \
   /usr/include/c++/11/bits/locale_facets.h \
@@ -24323,6 +24351,7 @@ src/player/CMakeFiles/sample_player.dir/planner/hold_ball.cpp.o: /home/joao/Docu
   /usr/include/c++/11/bits/stl_iterator.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/stl_pair.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/stl_relops.h \
@@ -24365,6 +24394,7 @@ src/player/CMakeFiles/sample_player.dir/planner/hold_ball.cpp.o: /home/joao/Docu
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/limits \
+  /usr/include/c++/11/list \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/new \
   /usr/include/c++/11/ostream \
@@ -24507,9 +24537,15 @@ src/player/CMakeFiles/sample_player.dir/planner/hold_ball.cpp.o: /home/joao/Docu
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/local/include/rcsc/common/player_type.h \
   /usr/local/include/rcsc/game_time.h \
   /usr/local/include/rcsc/geom/angle_deg.h \
   /usr/local/include/rcsc/geom/vector_2d.h \
+  /usr/local/include/rcsc/player/abstract_player_object.h \
+  /usr/local/include/rcsc/player/localization.h \
+  /usr/local/include/rcsc/player/visual_sensor.h \
+  /usr/local/include/rcsc/rcg/types.h \
+  /usr/local/include/rcsc/soccer_math.h \
   /usr/local/include/rcsc/types.h
 
 src/player/CMakeFiles/sample_player.dir/planner/neck_turn_to_receiver.cpp.o: /home/joao/Documents/RedDragons2D/src/player/planner/neck_turn_to_receiver.cpp \
@@ -24907,6 +24943,7 @@ src/player/CMakeFiles/sample_player.dir/planner/pass.cpp.o: /home/joao/Documents
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/bits/list.tcc \
   /usr/include/c++/11/bits/locale_classes.h \
   /usr/include/c++/11/bits/locale_classes.tcc \
   /usr/include/c++/11/bits/locale_facets.h \
@@ -24938,6 +24975,7 @@ src/player/CMakeFiles/sample_player.dir/planner/pass.cpp.o: /home/joao/Documents
   /usr/include/c++/11/bits/stl_iterator.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/stl_pair.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/stl_relops.h \
@@ -24980,6 +25018,7 @@ src/player/CMakeFiles/sample_player.dir/planner/pass.cpp.o: /home/joao/Documents
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/limits \
+  /usr/include/c++/11/list \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/new \
   /usr/include/c++/11/ostream \
@@ -25123,6 +25162,7 @@ src/player/CMakeFiles/sample_player.dir/planner/pass.cpp.o: /home/joao/Documents
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/local/include/rcsc/common/player_type.h \
   /usr/local/include/rcsc/common/server_param.h \
   /usr/local/include/rcsc/game_time.h \
   /usr/local/include/rcsc/geom/angle_deg.h \
@@ -25132,6 +25172,11 @@ src/player/CMakeFiles/sample_player.dir/planner/pass.cpp.o: /home/joao/Documents
   /usr/local/include/rcsc/geom/size_2d.h \
   /usr/local/include/rcsc/geom/vector_2d.h \
   /usr/local/include/rcsc/math_util.h \
+  /usr/local/include/rcsc/player/abstract_player_object.h \
+  /usr/local/include/rcsc/player/localization.h \
+  /usr/local/include/rcsc/player/visual_sensor.h \
+  /usr/local/include/rcsc/rcg/types.h \
+  /usr/local/include/rcsc/soccer_math.h \
   /usr/local/include/rcsc/types.h
 
 src/player/CMakeFiles/sample_player.dir/planner/predict_state.cpp.o: /home/joao/Documents/RedDragons2D/src/player/planner/predict_state.cpp \
@@ -25857,6 +25902,7 @@ src/player/CMakeFiles/sample_player.dir/planner/shoot.cpp.o: /home/joao/Document
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/bits/list.tcc \
   /usr/include/c++/11/bits/locale_classes.h \
   /usr/include/c++/11/bits/locale_classes.tcc \
   /usr/include/c++/11/bits/locale_facets.h \
@@ -25888,6 +25934,7 @@ src/player/CMakeFiles/sample_player.dir/planner/shoot.cpp.o: /home/joao/Document
   /usr/include/c++/11/bits/stl_iterator.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/stl_pair.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/stl_relops.h \
@@ -25930,6 +25977,7 @@ src/player/CMakeFiles/sample_player.dir/planner/shoot.cpp.o: /home/joao/Document
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/limits \
+  /usr/include/c++/11/list \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/new \
   /usr/include/c++/11/ostream \
@@ -26072,9 +26120,15 @@ src/player/CMakeFiles/sample_player.dir/planner/shoot.cpp.o: /home/joao/Document
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/local/include/rcsc/common/player_type.h \
   /usr/local/include/rcsc/game_time.h \
   /usr/local/include/rcsc/geom/angle_deg.h \
   /usr/local/include/rcsc/geom/vector_2d.h \
+  /usr/local/include/rcsc/player/abstract_player_object.h \
+  /usr/local/include/rcsc/player/localization.h \
+  /usr/local/include/rcsc/player/visual_sensor.h \
+  /usr/local/include/rcsc/rcg/types.h \
+  /usr/local/include/rcsc/soccer_math.h \
   /usr/local/include/rcsc/types.h
 
 src/player/CMakeFiles/sample_player.dir/planner/shoot_generator.cpp.o: /home/joao/Documents/RedDragons2D/src/player/planner/shoot_generator.cpp \
@@ -32762,6 +32816,7 @@ src/player/CMakeFiles/sample_player.dir/sample_player.cpp.o: /home/joao/Document
   /home/joao/Documents/RedDragons2D/src/player/planner/actgen_action_chain_length_filter.h \
   /home/joao/Documents/RedDragons2D/src/player/planner/actgen_cross.h \
   /home/joao/Documents/RedDragons2D/src/player/planner/actgen_direct_pass.h \
+  /home/joao/Documents/RedDragons2D/src/player/planner/actgen_passes.h \
   /home/joao/Documents/RedDragons2D/src/player/planner/actgen_self_pass.h \
   /home/joao/Documents/RedDragons2D/src/player/planner/actgen_shoot.h \
   /home/joao/Documents/RedDragons2D/src/player/planner/actgen_short_dribble.h \
@@ -39714,6 +39769,8 @@ src/player/CMakeFiles/sample_player.dir/view_tactical.cpp.o: /home/joao/Document
 
 /usr/include/boost/mpl/less.hpp:
 
+/usr/include/boost/mpl/lambda_fwd.hpp:
+
 /usr/include/boost/predef/os/bsd/net.h:
 
 /usr/include/eigen3/Eigen/src/Core/Dot.h:
@@ -41858,6 +41915,14 @@ config.h:
 
 /home/joao/Documents/RedDragons2D/src/player/planner/actgen_action_chain_length_filter.h:
 
+/home/joao/Documents/RedDragons2D/src/player/planner/actgen_passes.h:
+
+/usr/include/boost/type_traits/has_left_shift.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/Block.h:
+
+/usr/include/boost/core/swap.hpp:
+
 /home/joao/Documents/RedDragons2D/src/player/planner/clear_generator.h:
 
 /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_set_play_kick_in.h:
@@ -41887,12 +41952,6 @@ config.h:
 /usr/include/wctype.h:
 
 /usr/include/boost/container/detail/std_fwd.hpp:
-
-/usr/include/boost/type_traits/has_left_shift.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/Block.h:
-
-/usr/include/boost/core/swap.hpp:
 
 /usr/include/boost/range/config.hpp:
 
@@ -42167,5 +42226,3 @@ config.h:
 /usr/include/boost/mpl/iterator_tags.hpp:
 
 /usr/include/boost/mpl/lambda.hpp:
-
-/usr/include/boost/mpl/lambda_fwd.hpp:

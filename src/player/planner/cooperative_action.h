@@ -225,7 +225,7 @@ public:
 
     };
 
- /*   struct ScoreCompare{
+    struct ScoreCompare{
       private:
 
       public:
@@ -235,7 +235,7 @@ public:
                         {
                             return lhs->score > rhs->score;
                         }
-    };*/
+    };
 
 };
 

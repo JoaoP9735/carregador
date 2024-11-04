@@ -203,4 +203,4 @@ CooperativeAction::setDescription( const char * description )
     M_description = description;
 }
 
-//CooperativeAction::ScoreCompare::ScoreCompare() {}
+CooperativeAction::ScoreCompare::ScoreCompare() {}

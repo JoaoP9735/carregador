@@ -249,7 +249,7 @@ StrictCheckPassGenerator::generate( const WorldModel & wm )
     createCourses( wm );
 
     std::sort( M_courses.begin(), M_courses.end(),
-               CooperativeAction::DistCompare( ServerParam::i().theirTeamGoalPos() ) );
+               CooperativeAction::ScoreCompare() );
 
 #ifdef DEBUG_PROFILE
     if ( M_passer->unum() == wm.self().unum() )

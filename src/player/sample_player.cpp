@@ -795,7 +795,7 @@ SamplePlayer::createFieldEvaluator() const
 #include "actgen_simple_dribble.h"
 #include "actgen_shoot.h"
 #include "actgen_action_chain_length_filter.h"
-
+#include "actgen_passes.h"
 ActionGenerator::ConstPtr
 SamplePlayer::createActionGenerator() const
 {
@@ -823,9 +823,9 @@ SamplePlayer::createActionGenerator() const
     //
     // direct pass
     //
-    // g->addGenerator( new ActGen_RangeActionChainLengthFilter
-    //                  ( new ActGen_DirectPass(),
-    //                    2, ActGen_RangeActionChainLengthFilter::MAX ) );
+     g->addGenerator( new ActGen_RangeActionChainLengthFilter
+                      ( new ActGen_DirectPass(),
+                        2, ActGen_RangeActionChainLengthFilter::MAX ) );
 
     //
     // short dribble
@@ -842,9 +842,14 @@ SamplePlayer::createActionGenerator() const
     //
     // simple dribble
     //
-    // g->addGenerator( new ActGen_RangeActionChainLengthFilter
-    //                  ( new ActGen_SimpleDribble(),
-    //                    2, ActGen_RangeActionChainLengthFilter::MAX ) );
-
+     g->addGenerator( new ActGen_RangeActionChainLengthFilter
+                      ( new ActGen_SimpleDribble(),
+                        2, ActGen_RangeActionChainLengthFilter::MAX ) );
+    //
+    // all types of passes
+    //
+    g->addGenerator( new ActGen_RangeActionChainLengthFilter
+                      ( new ActGen_Passes(),
+                        2, ActGen_RangeActionChainLengthFilter::MAX ) );
     return ActionGenerator::ConstPtr( g );
 }
