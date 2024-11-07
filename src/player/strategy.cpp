@@ -70,7 +70,7 @@
 #include <rcsc/param/cmd_line_parser.h>
 #include <rcsc/param/param_map.h>
 #include <rcsc/game_mode.h>
-
+#include <rcsc/player/abstract_player_object.h>
 #include <iostream>
 
 using namespace rcsc;
@@ -992,30 +992,65 @@ Strategy::updatePosition( const WorldModel & wm )
                         M_positions[10 - 1].x = wm.offsideLineX() + wm.ball().vel().x;
                         M_positions[11 - 1].x = wm.offsideLineX() + wm.ball().vel().x;
 
-                        if (wm.ball().pos().y > 0)
+                        if (wm.ball().pos().y > 10)
                         {
-                            M_positions[9 - 1].y = 15.0;
-                            M_positions[11 - 1].y = 22.5;
-                            M_positions[10 - 1].y = 30.0;
-                        }
-                        else
-                        {
-                            M_positions[9 - 1].y = -30.0;
-                            M_positions[11 - 1].y = -22.5;
-                            M_positions[10 - 1].y = -15.0;
+                            M_positions[9 - 1].y = 0.0;
+                            M_positions[11 - 1].y = 10.0;
+                            M_positions[10 - 1].y = 20.0;
                         }
 
+                        else if (wm.ball().pos().y < -10)
+                        {
+                            M_positions[9 - 1].y = -20.0;
+                            M_positions[11 - 1].y = -10.0;
+                            M_positions[10 - 1].y = 0.0;
+                        }
+                        else {
+                            M_positions[9 - 1].y = -10.0;
+                            M_positions[11 - 1].y = 0.0;
+                            M_positions[10 - 1].y = 10.0;
+                        }
                         double midX = wm.offsideLineX() - wing_depth;
 
-                        M_positions[6 - 1].x = midX;
+                        M_positions[6 - 1].x = midX-5;
                         M_positions[7 - 1].x = midX;
                         M_positions[8 - 1].x = midX;
 
-                        M_positions[7 - 1].y = M_positions[9 - 1].y;
-                        M_positions[6 - 1].y = M_positions[11 - 1].y;
-                        M_positions[8 - 1].y = M_positions[10 - 1].y;
+                        M_positions[7 - 1].y = M_positions[9 - 1].y + 4; //meias ficam perto dos pontas mas com uma certa distância para n disputarem a posse da bola
+                       // M_positions[6 - 1].y = M_positions[11 - 1].y;
+                        M_positions[8 - 1].y = M_positions[10 - 1].y - 4;
                     }
 
+    else if (opp_min<=our_min && wm.ball().pos().x < 10){
+        bool rec = false;
+        int cont=0;
+        const AbstractPlayerObject * goleiro = wm.getOurGoalie();
+        if((goleiro != nullptr) && goleiro->isSelf()){
+        const PlayerObject::Cont prox_gol = wm.teammatesFromSelf();
+        const PlayerObject::Cont near_goal(prox_gol.begin(), prox_gol.begin() + 5);
+        for(int i=0; i<wm.teammatesFromBall().size(); i++){
+            if(wm.teammatesFromBall()[i]->goalie())
+                continue;
+            else{
+                auto it = std::find(near_goal.begin(), near_goal.end(), wm.teammatesFromBall()[i]);
+                if(it!=near_goal.end() ){
+                    if(rec){
+                        continue;
+                    }
+                    else{
+                        rec = true;
+                        M_positions[wm.teammatesFromBall()[i]->unum()-1].x = wm.ball().pos().x-3;
+                        M_positions[wm.teammatesFromBall()[i]->unum()-1].y = wm.ball().pos().y;
+                    }
+                }
+                else{
+                    M_positions[wm.teammatesFromBall()[i]->unum()-1].x = wm.ball().pos().x-3;
+                    M_positions[wm.teammatesFromBall()[i]->unum()-1].y = wm.ball().pos().y;
+                }
+            }
+        }
+    }
+    }
     M_position_types.clear();
     for ( int unum = 1; unum <= 11; ++unum )
     {

@@ -208,8 +208,8 @@ evaluate_state( const PredictState & state, const rcsc::WorldModel & wm )
         }
 
         double weight = 1.0;
-        if (wm.ball().pos().x > 35.0)
-            weight = 0.3;
+       // if (wm.ball().pos().x > 35.0)
+         //   weight = 0.3;
 
 	double depth = 10.0;
     // C2D: Helios 18 Tune removed -> replace with BNN
@@ -421,7 +421,7 @@ evaluate_state( const PredictState & state, const rcsc::WorldModel & wm )
                                         state.getPlayers( new OpponentOrUnknownPlayerPredicate( state.ourSide() ) ),
                                         VALID_PLAYER_THRESHOLD ) )
     {
-        point += 1.0e+6;
+        point += 5.0e+6;
 #ifdef DEBUG_PRINT
         dlog.addText( Logger::ACTION_CHAIN,
                       "(eval) bonus for goal %f (%f)", 1.0e+6, point );

@@ -10677,6 +10677,7 @@ src/player/CMakeFiles/sample_player.dir/bhv_basic_block.cpp.o
  /home/joao/Documents/RedDragons2D/src/player/bhv_basic_block.h
  /home/joao/Documents/RedDragons2D/src/player/bhv_basic_tackle.h
  /home/joao/Documents/RedDragons2D/src/player/neck_offensive_intercept_neck.h
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h
  /home/joao/Documents/RedDragons2D/src/player/soccer_role.h
  /home/joao/Documents/RedDragons2D/src/player/strategy.h
  /usr/include/alloca.h
@@ -11099,6 +11100,7 @@ src/player/CMakeFiles/sample_player.dir/bhv_basic_move.cpp.o
  /home/joao/Documents/RedDragons2D/src/player/bhv_basic_tackle.h
  /home/joao/Documents/RedDragons2D/src/player/bhv_unmark.h
  /home/joao/Documents/RedDragons2D/src/player/neck_offensive_intercept_neck.h
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h
  /home/joao/Documents/RedDragons2D/src/player/soccer_role.h
  /home/joao/Documents/RedDragons2D/src/player/strategy.h
  /usr/include/alloca.h
@@ -13609,6 +13611,7 @@ src/player/CMakeFiles/sample_player.dir/bhv_penalty_kick.cpp.o
  /home/joao/Documents/RedDragons2D/src/player/bhv_goalie_basic_move.h
  /home/joao/Documents/RedDragons2D/src/player/bhv_goalie_chase_ball.h
  /home/joao/Documents/RedDragons2D/src/player/bhv_penalty_kick.h
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_go_to_placed_ball.h
  /home/joao/Documents/RedDragons2D/src/player/soccer_role.h
  /home/joao/Documents/RedDragons2D/src/player/strategy.h
@@ -14029,6 +14032,7 @@ src/player/CMakeFiles/sample_player.dir/bhv_unmark.cpp.o
  /home/joao/Documents/RedDragons2D/src/player/data_extractor/DEState.h
  /home/joao/Documents/RedDragons2D/src/player/data_extractor/offensive_data_extractor.h
  /home/joao/Documents/RedDragons2D/src/player/intention_receive.h
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h
  /home/joao/Documents/RedDragons2D/src/player/planner/field_analyzer.h
  /home/joao/Documents/RedDragons2D/src/player/planner/predict_ball_object.h
  /home/joao/Documents/RedDragons2D/src/player/planner/predict_player_object.h
@@ -15991,6 +15995,7 @@ src/player/CMakeFiles/sample_player.dir/keepaway_communication.cpp.o
  /home/joao/Documents/RedDragons2D/build/config.h
  /home/joao/Documents/RedDragons2D/src/player/communication.h
  /home/joao/Documents/RedDragons2D/src/player/keepaway_communication.h
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h
  /home/joao/Documents/RedDragons2D/src/player/soccer_role.h
  /home/joao/Documents/RedDragons2D/src/player/strategy.h
  /usr/include/alloca.h
@@ -29356,6 +29361,7 @@ src/player/CMakeFiles/sample_player.dir/role_keepaway_keeper.cpp.o
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/neck_scan_field.h
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/neck_turn_to_ball_or_scan.h
  /home/joao/Documents/RedDragons2D/src/player/planner/bhv_planned_action.h
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h
  /home/joao/Documents/RedDragons2D/src/player/role_keepaway_keeper.h
  /home/joao/Documents/RedDragons2D/src/player/soccer_role.h
  /home/joao/Documents/RedDragons2D/src/player/strategy.h
@@ -30433,6 +30439,7 @@ src/player/CMakeFiles/sample_player.dir/role_sample.cpp.o
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/neck_scan_field.h
  /home/joao/Documents/RedDragons2D/src/player/bhv_basic_move.h
  /home/joao/Documents/RedDragons2D/src/player/planner/bhv_planned_action.h
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h
  /home/joao/Documents/RedDragons2D/src/player/role_sample.h
  /home/joao/Documents/RedDragons2D/src/player/soccer_role.h
  /home/joao/Documents/RedDragons2D/src/player/strategy.h
@@ -31842,6 +31849,7 @@ src/player/CMakeFiles/sample_player.dir/sample_communication.cpp.o
  /home/joao/Documents/RedDragons2D/src/player/sample_communication.cpp
  /home/joao/Documents/RedDragons2D/build/config.h
  /home/joao/Documents/RedDragons2D/src/player/communication.h
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h
  /home/joao/Documents/RedDragons2D/src/player/sample_communication.h
  /home/joao/Documents/RedDragons2D/src/player/soccer_role.h
  /home/joao/Documents/RedDragons2D/src/player/strategy.h
@@ -32912,6 +32920,7 @@ src/player/CMakeFiles/sample_player.dir/sample_player.cpp.o
  /home/joao/Documents/RedDragons2D/src/player/planner/actgen_action_chain_length_filter.h
  /home/joao/Documents/RedDragons2D/src/player/planner/actgen_cross.h
  /home/joao/Documents/RedDragons2D/src/player/planner/actgen_direct_pass.h
+ /home/joao/Documents/RedDragons2D/src/player/planner/actgen_passes.cpp
  /home/joao/Documents/RedDragons2D/src/player/planner/actgen_passes.h
  /home/joao/Documents/RedDragons2D/src/player/planner/actgen_self_pass.h
  /home/joao/Documents/RedDragons2D/src/player/planner/actgen_shoot.h
@@ -32926,9 +32935,11 @@ src/player/CMakeFiles/sample_player.dir/sample_player.cpp.o
  /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h
  /home/joao/Documents/RedDragons2D/src/player/planner/field_analyzer.h
  /home/joao/Documents/RedDragons2D/src/player/planner/field_evaluator.h
+ /home/joao/Documents/RedDragons2D/src/player/planner/pass.h
  /home/joao/Documents/RedDragons2D/src/player/planner/predict_ball_object.h
  /home/joao/Documents/RedDragons2D/src/player/planner/predict_player_object.h
  /home/joao/Documents/RedDragons2D/src/player/planner/predict_state.h
+ /home/joao/Documents/RedDragons2D/src/player/planner/strict_check_pass_generator.h
  /home/joao/Documents/RedDragons2D/src/player/sample_communication.h
  /home/joao/Documents/RedDragons2D/src/player/sample_field_evaluator.h
  /home/joao/Documents/RedDragons2D/src/player/sample_freeform_message_parser.h
@@ -34612,6 +34623,7 @@ src/player/CMakeFiles/sample_player.dir/setplay/bhv_set_play.cpp.o
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/view_normal.h
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/view_wide.h
  /home/joao/Documents/RedDragons2D/src/player/bhv_goalie_free_kick.h
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_set_play.h
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_set_play_free_kick.h
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_set_play_goal_kick.h
@@ -35038,6 +35050,7 @@ src/player/CMakeFiles/sample_player.dir/setplay/bhv_set_play_free_kick.cpp.o
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/view_normal.h
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/view_wide.h
  /home/joao/Documents/RedDragons2D/src/player/planner/bhv_planned_action.h
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_go_to_placed_ball.h
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_prepare_set_play_kick.h
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_set_play.h
@@ -35468,6 +35481,7 @@ src/player/CMakeFiles/sample_player.dir/setplay/bhv_set_play_goal_kick.cpp.o
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/view_normal.h
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/view_wide.h
  /home/joao/Documents/RedDragons2D/src/player/planner/bhv_planned_action.h
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_go_to_placed_ball.h
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_prepare_set_play_kick.h
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_set_play.h
@@ -35892,6 +35906,7 @@ src/player/CMakeFiles/sample_player.dir/setplay/bhv_set_play_indirect_free_kick.
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/view_normal.h
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/view_wide.h
  /home/joao/Documents/RedDragons2D/src/player/planner/bhv_planned_action.h
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_go_to_placed_ball.h
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_prepare_set_play_kick.h
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_set_play.h
@@ -36318,6 +36333,7 @@ src/player/CMakeFiles/sample_player.dir/setplay/bhv_set_play_kick_in.cpp.o
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/view_normal.h
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/view_wide.h
  /home/joao/Documents/RedDragons2D/src/player/planner/bhv_planned_action.h
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_go_to_placed_ball.h
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_set_play.h
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_set_play_kick_in.h
@@ -36739,6 +36755,7 @@ src/player/CMakeFiles/sample_player.dir/setplay/bhv_set_play_kick_off.cpp.o
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/view_change_width.h
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/view_normal.h
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/view_wide.h
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_go_to_placed_ball.h
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_prepare_set_play_kick.h
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_set_play.h
@@ -37159,6 +37176,7 @@ src/player/CMakeFiles/sample_player.dir/setplay/bhv_their_goal_kick_move.cpp.o
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/view_change_width.h
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/view_normal.h
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/view_wide.h
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_set_play.h
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_their_goal_kick_move.h
  /home/joao/Documents/RedDragons2D/src/player/soccer_role.h
@@ -38193,6 +38211,7 @@ src/player/CMakeFiles/sample_player.dir/soccer_role.cpp.o
 src/player/CMakeFiles/sample_player.dir/strategy.cpp.o
  /home/joao/Documents/RedDragons2D/src/player/strategy.cpp
  /home/joao/Documents/RedDragons2D/build/config.h
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h
  /home/joao/Documents/RedDragons2D/src/player/role_center_back.h
  /home/joao/Documents/RedDragons2D/src/player/role_center_forward.h
  /home/joao/Documents/RedDragons2D/src/player/role_defensive_half.h

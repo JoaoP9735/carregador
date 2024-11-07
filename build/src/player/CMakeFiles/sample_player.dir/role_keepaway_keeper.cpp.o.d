@@ -225,7 +225,14 @@ src/player/CMakeFiles/sample_player.dir/role_keepaway_keeper.cpp.o: \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
  /usr/local/include/rcsc/formation/role_type.h \
- /usr/local/include/rcsc/types.h /usr/include/boost/shared_ptr.hpp \
+ /usr/local/include/rcsc/types.h \
+ /usr/local/include/rcsc/player/abstract_player_object.h \
+ /usr/local/include/rcsc/player/localization.h \
+ /usr/local/include/rcsc/player/visual_sensor.h \
+ /usr/local/include/rcsc/game_time.h \
+ /usr/local/include/rcsc/common/player_type.h \
+ /usr/local/include/rcsc/rcg/types.h \
+ /usr/local/include/rcsc/soccer_math.h /usr/include/boost/shared_ptr.hpp \
  /usr/include/boost/smart_ptr/shared_ptr.hpp \
  /usr/include/boost/smart_ptr/detail/shared_count.hpp \
  /usr/include/boost/smart_ptr/bad_weak_ptr.hpp \
@@ -280,12 +287,10 @@ src/player/CMakeFiles/sample_player.dir/role_keepaway_keeper.cpp.o: \
  /usr/include/boost/smart_ptr/detail/operator_bool.hpp \
  /usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
  /usr/include/boost/smart_ptr/detail/local_counted_base.hpp \
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h \
  /home/joao/Documents/RedDragons2D/src/player/planner/bhv_planned_action.h \
  /usr/local/include/rcsc/player/soccer_action.h \
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/body_go_to_point.h \
- /usr/local/include/rcsc/common/player_type.h \
- /usr/local/include/rcsc/rcg/types.h \
- /usr/local/include/rcsc/soccer_math.h \
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/body_intercept.h \
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/body_intercept2018.h \
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/intercept_evaluator.h \
@@ -294,13 +299,9 @@ src/player/CMakeFiles/sample_player.dir/role_keepaway_keeper.cpp.o: \
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/neck_turn_to_ball_or_scan.h \
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/neck_scan_field.h \
  /usr/local/include/rcsc/player/view_mode.h \
- /usr/local/include/rcsc/game_time.h \
  /usr/local/include/rcsc/player/player_agent.h \
  /usr/local/include/rcsc/player/world_model.h \
  /usr/local/include/rcsc/player/self_object.h \
- /usr/local/include/rcsc/player/abstract_player_object.h \
- /usr/local/include/rcsc/player/localization.h \
- /usr/local/include/rcsc/player/visual_sensor.h \
  /usr/local/include/rcsc/player/fullstate_sensor.h \
  /usr/local/include/rcsc/common/stamina_model.h \
  /usr/local/include/rcsc/player/ball_object.h \

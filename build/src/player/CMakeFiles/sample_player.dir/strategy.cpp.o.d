@@ -224,7 +224,14 @@ src/player/CMakeFiles/sample_player.dir/strategy.cpp.o: \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
  /usr/local/include/rcsc/formation/role_type.h \
- /usr/local/include/rcsc/types.h /usr/include/boost/shared_ptr.hpp \
+ /usr/local/include/rcsc/types.h \
+ /usr/local/include/rcsc/player/abstract_player_object.h \
+ /usr/local/include/rcsc/player/localization.h \
+ /usr/local/include/rcsc/player/visual_sensor.h \
+ /usr/local/include/rcsc/game_time.h \
+ /usr/local/include/rcsc/common/player_type.h \
+ /usr/local/include/rcsc/rcg/types.h \
+ /usr/local/include/rcsc/soccer_math.h /usr/include/boost/shared_ptr.hpp \
  /usr/include/boost/smart_ptr/shared_ptr.hpp \
  /usr/include/boost/smart_ptr/detail/shared_count.hpp \
  /usr/include/boost/smart_ptr/bad_weak_ptr.hpp \
@@ -279,12 +286,12 @@ src/player/CMakeFiles/sample_player.dir/strategy.cpp.o: \
  /usr/include/boost/smart_ptr/detail/operator_bool.hpp \
  /usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
  /usr/include/boost/smart_ptr/detail/local_counted_base.hpp \
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h \
  /home/joao/Documents/RedDragons2D/src/player/role_sample.h \
  /home/joao/Documents/RedDragons2D/src/player/role_center_back.h \
  /home/joao/Documents/RedDragons2D/src/player/role_center_forward.h \
  /home/joao/Documents/RedDragons2D/src/player/role_defensive_half.h \
  /home/joao/Documents/RedDragons2D/src/player/role_goalie.h \
- /usr/local/include/rcsc/game_time.h \
  /home/joao/Documents/RedDragons2D/src/player/role_offensive_half.h \
  /home/joao/Documents/RedDragons2D/src/player/role_side_back.h \
  /home/joao/Documents/RedDragons2D/src/player/role_side_forward.h \
@@ -295,12 +302,6 @@ src/player/CMakeFiles/sample_player.dir/strategy.cpp.o: \
  /usr/local/include/rcsc/player/intercept.h \
  /usr/local/include/rcsc/player/world_model.h \
  /usr/local/include/rcsc/player/self_object.h \
- /usr/local/include/rcsc/player/abstract_player_object.h \
- /usr/local/include/rcsc/player/localization.h \
- /usr/local/include/rcsc/player/visual_sensor.h \
- /usr/local/include/rcsc/common/player_type.h \
- /usr/local/include/rcsc/rcg/types.h \
- /usr/local/include/rcsc/soccer_math.h \
  /usr/local/include/rcsc/player/view_mode.h \
  /usr/local/include/rcsc/player/fullstate_sensor.h \
  /usr/local/include/rcsc/common/stamina_model.h \

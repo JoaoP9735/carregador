@@ -795,7 +795,7 @@ SamplePlayer::createFieldEvaluator() const
 #include "actgen_simple_dribble.h"
 #include "actgen_shoot.h"
 #include "actgen_action_chain_length_filter.h"
-#include "actgen_passes.h"
+#include "actgen_passes.cpp"
 ActionGenerator::ConstPtr
 SamplePlayer::createActionGenerator() const
 {

@@ -78,7 +78,7 @@ Bhv_BasicMove::execute( PlayerAgent * agent )
     double doTackleProb = 0.8;
     if (wm.ball().pos().x < 0.0)
     {
-      doTackleProb = 0.5;
+      doTackleProb = 0.6;
     }
 
     if ( Bhv_BasicTackle( doTackleProb, 80.0 ).execute( agent ) )
@@ -86,13 +86,11 @@ Bhv_BasicMove::execute( PlayerAgent * agent )
         return true;
     }
 
-    /*--------------------------------------------------------*/
-    // chase ball
     const int self_min = wm.interceptTable().selfStep();
     const int mate_min = wm.interceptTable().teammateStep();
     const int opp_min = wm.interceptTable().opponentStep();
 
-    const Vector2D target_point = Strategy::i().getPosition( wm.self().unum() );
+
 
     // G2d: to retrieve opp team name
     // C2D: Helios 18 Tune removed -> replace with BNN
@@ -109,8 +107,38 @@ Bhv_BasicMove::execute( PlayerAgent * agent )
     // G2d: role
     int role = Strategy::i().roleNumber( wm.self().unum() );
 
-    // G2D: blocking
+    // G2d: pressing
+    int pressing = 13;
 
+    if ( role >= 6 && role <= 8 && wm.ball().pos().x > -30.0 && wm.self().pos().x < 10.0 )
+        pressing = 7;
+
+    if (fabs(wm.ball().pos().y) > 22.0 && wm.ball().pos().x < 0.0 && wm.ball().pos().x > -36.5 && (role == 4 || role == 5) ) 
+        pressing = 23;
+
+    // C2D: Helios 18 Tune removed -> replace with BNN
+    // if (helios2018) 
+	// pressing = 4;
+
+    if ( ! wm.kickableTeammate()
+         && ( self_min <= 3
+              || ( self_min <= mate_min
+                   && self_min < opp_min + pressing ) // pressing
+              )
+         )
+    {
+        dlog.addText( Logger::TEAM,
+                      __FILE__": intercept" );
+        Body_Intercept().execute( agent );
+        agent->setNeckAction( new Neck_OffensiveInterceptNeck() );
+
+        return true;
+    }
+    /*--------------------------------------------------------*/
+    // chase ball
+
+    // G2D: blocking
+    const Vector2D target_point = Strategy::i().getPosition( wm.self().unum() );
     Vector2D ball = wm.ball().pos();
 
     double block_d = -10.0;
@@ -152,36 +180,6 @@ Bhv_BasicMove::execute( PlayerAgent * agent )
         }
 
     } // end of block
-
-
-    // G2d: pressing
-    int pressing = 13;
-
-    if ( role >= 6 && role <= 8 && wm.ball().pos().x > -30.0 && wm.self().pos().x < 10.0 )
-        pressing = 7;
-
-    if (fabs(wm.ball().pos().y) > 22.0 && wm.ball().pos().x < 0.0 && wm.ball().pos().x > -36.5 && (role == 4 || role == 5) ) 
-        pressing = 23;
-
-    // C2D: Helios 18 Tune removed -> replace with BNN
-    // if (helios2018) 
-	// pressing = 4;
-
-    if ( ! wm.kickableTeammate()
-         && ( self_min <= 3
-              || ( self_min <= mate_min
-                   && self_min < opp_min + pressing ) // pressing
-              )
-         )
-    {
-        dlog.addText( Logger::TEAM,
-                      __FILE__": intercept" );
-        Body_Intercept().execute( agent );
-        agent->setNeckAction( new Neck_OffensiveInterceptNeck() );
-
-        return true;
-    }
-
 
 
 // G2D : offside trap

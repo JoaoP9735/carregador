@@ -249,7 +249,7 @@ StrictCheckPassGenerator::generate( const WorldModel & wm )
     createCourses( wm );
 
     std::sort( M_courses.begin(), M_courses.end(),
-               CooperativeAction::ScoreCompare() );
+               CooperativeAction::ScoreCompare());
 
 #ifdef DEBUG_PROFILE
     if ( M_passer->unum() == wm.self().unum() )
@@ -544,6 +544,7 @@ StrictCheckPassGenerator::createCourses( const WorldModel & wm )
 void StrictCheckPassGenerator::evaluateCourses(const WorldModel & world){
     const AngleDeg min_angle = -45.0;
     const AngleDeg max_angle = 45.0;
+    const ServerParam & SP = ServerParam::i();
 
     for (int i=0;i<M_courses.size();i++)
     {
@@ -554,18 +555,18 @@ void StrictCheckPassGenerator::evaluateCourses(const WorldModel & world){
         {
             double opp_dist = 100.0;
             world.getOpponentNearestTo( passe->M_target_point, 20, &opp_dist );
-            opp_dist_rate = std::pow( 0.99, std::max( 0.0, 30.0 - opp_dist ) );
+            opp_dist_rate = std::pow( 0.98, std::max( 0.0, 30.0 - opp_dist ) );
         }
         //-----------------------------------------------------------
         double x_diff_rate = 1.0;
         {
             double x_diff = passe->M_target_point.x - world.self().pos().x;
-            x_diff_rate = std::pow( 0.98, std::max( 0.0, 3.0 - x_diff ) );
+            x_diff_rate = std::pow( 0.97, std::max( 0.0, 5.0 - x_diff ) );
         }
         //-----------------------------------------------------------
         double receiver_move_rate = 1.0;
         if(passe->M_description == "strictDirect")
-           receiver_move_rate = std::pow( 0.995,passe->receiver->pos().dist( passe->M_target_point ) );
+           receiver_move_rate = std::pow( 0.985,passe->receiver->pos().dist( passe->M_target_point ) );
         //-----------------------------------------------------------
         double pos_conf_rate = std::pow( 0.98, passe->receiver->posCount() );
         //-----------------------------------------------------------
@@ -584,26 +585,27 @@ void StrictCheckPassGenerator::evaluateCourses(const WorldModel & world){
                                                   - world.ball().pos().y ) ) );
         //-----------------------------------------------------------
         const Sector2D sector( passe->M_target_point,
-                               0.0, 10.0,
+                               0.0, 4.0,
                                min_angle, max_angle );
 
         // opponent check wpasseh goalie
-        double front_space_rate = 1.0;
-        if ( world.existOpponentIn( sector, 10, true ) )
-        {
-            front_space_rate = 0.95;
-        }
+        double num_opps = static_cast<double>(world.countOpponentsIn( sector,8,true ));
+        double front_space_rate = std::pow(0.95, num_opps);
+
+        
+        double distc = passe->M_target_point.dist(SP.theirTeamGoalPos());
+        double gol_dist_rate = (passe->M_target_point.x > 30) ? std::pow(0.99, std::max(0.0, distc-3)) : 0.59;
 
         //-----------------------------------------------------------
         passe->score = 1000.0;
-        //passe->score *= opp_dist_rate;
-        //passe->score *= x_diff_rate;
-        //passe->score *= receiver_move_rate;
-        //passe->score *= pos_conf_rate;
-       // passe->score *= dir_conf_rate;
+        passe->score *= opp_dist_rate;
+        passe->score *= x_diff_rate;
+        passe->score *= receiver_move_rate;
+        passe->score *= pos_conf_rate;
+        passe->score *= dir_conf_rate;
         passe->score *= offense_rate;
         passe->score *= front_space_rate;
-
+        passe->score *= gol_dist_rate;
         if ( passe->M_duration_step == 1 )
         {
             passe->score *= 1.2;
@@ -639,7 +641,7 @@ StrictCheckPassGenerator::createDirectPass( const WorldModel & wm,
     // check receivable area
     //
     if ( receiver.pos_.x > SP.pitchHalfLength() - 1.5
-         || receiver.pos_.x < - SP.pitchHalfLength() + 5.0
+         || receiver.pos_.x < - SP.pitchHalfLength() + 3.0
          || receiver.pos_.absY() > SP.pitchHalfWidth() - 1.5 )
     {
 #ifdef DEBUG_DIRECT_PASS

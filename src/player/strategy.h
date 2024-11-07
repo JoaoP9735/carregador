@@ -36,12 +36,12 @@
 
 #include <rcsc/formation/formation.h>
 #include <rcsc/geom/vector_2d.h>
-
+#include "rcsc/player/abstract_player_object.h"
 #include <boost/shared_ptr.hpp>
 #include <map>
 #include <vector>
 #include <string>
-
+#include "cooperative_action.h"
 // # define USE_GENERIC_FACTORY 1
 
 namespace rcsc {
@@ -64,7 +64,7 @@ enum SituationType {
     PenaltyKick_Situation,
 };
 
-
+using namespace rcsc;
 class Strategy {
 public:
     static const std::string BEFORE_KICK_OFF_CONF;
@@ -158,7 +158,6 @@ public:
 
     bool init( rcsc::CmdLineParser & cmd_parser );
     bool read( const std::string & config_dir );
-
 
     //
     // update

@@ -226,7 +226,14 @@ src/player/CMakeFiles/sample_player.dir/bhv_basic_block.cpp.o: \
  /usr/local/include/rcsc/formation/formation.h \
  /usr/local/include/rcsc/formation/formation_data.h \
  /usr/local/include/rcsc/formation/role_type.h \
- /usr/local/include/rcsc/types.h /usr/include/boost/shared_ptr.hpp \
+ /usr/local/include/rcsc/types.h \
+ /usr/local/include/rcsc/player/abstract_player_object.h \
+ /usr/local/include/rcsc/player/localization.h \
+ /usr/local/include/rcsc/player/visual_sensor.h \
+ /usr/local/include/rcsc/game_time.h \
+ /usr/local/include/rcsc/common/player_type.h \
+ /usr/local/include/rcsc/rcg/types.h \
+ /usr/local/include/rcsc/soccer_math.h /usr/include/boost/shared_ptr.hpp \
  /usr/include/boost/smart_ptr/shared_ptr.hpp \
  /usr/include/boost/smart_ptr/detail/shared_count.hpp \
  /usr/include/boost/smart_ptr/bad_weak_ptr.hpp \
@@ -281,6 +288,7 @@ src/player/CMakeFiles/sample_player.dir/bhv_basic_block.cpp.o: \
  /usr/include/boost/smart_ptr/detail/operator_bool.hpp \
  /usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
  /usr/include/boost/smart_ptr/detail/local_counted_base.hpp \
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h \
  /home/joao/Documents/RedDragons2D/src/player/bhv_basic_tackle.h \
  /home/joao/Documents/RedDragons2D/src/player/neck_offensive_intercept_neck.h \
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/body_turn_to_point.h \
@@ -288,13 +296,6 @@ src/player/CMakeFiles/sample_player.dir/bhv_basic_block.cpp.o: \
  /usr/local/include/rcsc/player/player_agent.h \
  /usr/local/include/rcsc/player/world_model.h \
  /usr/local/include/rcsc/player/self_object.h \
- /usr/local/include/rcsc/player/abstract_player_object.h \
- /usr/local/include/rcsc/player/localization.h \
- /usr/local/include/rcsc/player/visual_sensor.h \
- /usr/local/include/rcsc/game_time.h \
- /usr/local/include/rcsc/common/player_type.h \
- /usr/local/include/rcsc/rcg/types.h \
- /usr/local/include/rcsc/soccer_math.h \
  /usr/local/include/rcsc/player/view_mode.h \
  /usr/local/include/rcsc/player/fullstate_sensor.h \
  /usr/local/include/rcsc/common/stamina_model.h \

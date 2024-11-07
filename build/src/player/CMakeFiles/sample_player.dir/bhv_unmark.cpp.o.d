@@ -224,7 +224,14 @@ src/player/CMakeFiles/sample_player.dir/bhv_unmark.cpp.o: \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
  /usr/local/include/rcsc/formation/role_type.h \
- /usr/local/include/rcsc/types.h /usr/include/boost/shared_ptr.hpp \
+ /usr/local/include/rcsc/types.h \
+ /usr/local/include/rcsc/player/abstract_player_object.h \
+ /usr/local/include/rcsc/player/localization.h \
+ /usr/local/include/rcsc/player/visual_sensor.h \
+ /usr/local/include/rcsc/game_time.h \
+ /usr/local/include/rcsc/common/player_type.h \
+ /usr/local/include/rcsc/rcg/types.h \
+ /usr/local/include/rcsc/soccer_math.h /usr/include/boost/shared_ptr.hpp \
  /usr/include/boost/smart_ptr/shared_ptr.hpp \
  /usr/include/boost/smart_ptr/detail/shared_count.hpp \
  /usr/include/boost/smart_ptr/bad_weak_ptr.hpp \
@@ -279,15 +286,9 @@ src/player/CMakeFiles/sample_player.dir/bhv_unmark.cpp.o: \
  /usr/include/boost/smart_ptr/detail/operator_bool.hpp \
  /usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
  /usr/include/boost/smart_ptr/detail/local_counted_base.hpp \
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h \
  /home/joao/Documents/RedDragons2D/src/player/bhv_unmark.h \
  /usr/local/include/rcsc/player/soccer_action.h \
- /usr/local/include/rcsc/player/abstract_player_object.h \
- /usr/local/include/rcsc/player/localization.h \
- /usr/local/include/rcsc/player/visual_sensor.h \
- /usr/local/include/rcsc/game_time.h \
- /usr/local/include/rcsc/common/player_type.h \
- /usr/local/include/rcsc/rcg/types.h \
- /usr/local/include/rcsc/soccer_math.h \
  /usr/local/include/CppDNN/DeepNueralNetwork.h \
  /usr/local/include/CppDNN/Layer.h /usr/include/eigen3/Eigen/Dense \
  /usr/include/eigen3/Eigen/Core \

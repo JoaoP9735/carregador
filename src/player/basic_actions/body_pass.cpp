@@ -1289,12 +1289,13 @@ Body_Pass::evaluate_routes( const WorldModel & world )
         double x_diff_rate = 1.0;
         {
             double x_diff = it->receive_point_.x - world.self().pos().x;
-            x_diff_rate = std::pow( 0.98, std::max( 0.0, 30.0 - x_diff ) );
+            x_diff_rate = std::pow( 0.98, std::max( 0.0, 3.0 - x_diff ) );
         }
         //-----------------------------------------------------------
         double receiver_move_rate = 1.0;
-        //= std::pow( 0.995,
-        //it->receiver_->pos().dist( it->receive_point_ ) );
+        if(it->type_== DIRECT) 
+            receiver_move_rate=std::pow( 0.995,
+        it->receiver_->pos().dist( it->receive_point_ ) );
         //-----------------------------------------------------------
         double pos_conf_rate = std::pow( 0.98, it->receiver_->posCount() );
         //-----------------------------------------------------------
@@ -1308,7 +1309,7 @@ Body_Pass::evaluate_routes( const WorldModel & world )
         }
         //-----------------------------------------------------------
         double offense_rate
-            = std::pow( 0.98,
+            = std::pow( 0.97,
                         std::max( 5.0, std::fabs( it->receive_point_.y
                                                   - world.ball().pos().y ) ) );
         //-----------------------------------------------------------

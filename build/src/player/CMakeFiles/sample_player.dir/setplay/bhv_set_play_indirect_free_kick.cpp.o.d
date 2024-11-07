@@ -226,7 +226,14 @@ src/player/CMakeFiles/sample_player.dir/setplay/bhv_set_play_indirect_free_kick.
  /usr/local/include/rcsc/formation/formation.h \
  /usr/local/include/rcsc/formation/formation_data.h \
  /usr/local/include/rcsc/formation/role_type.h \
- /usr/local/include/rcsc/types.h /usr/include/boost/shared_ptr.hpp \
+ /usr/local/include/rcsc/types.h \
+ /usr/local/include/rcsc/player/abstract_player_object.h \
+ /usr/local/include/rcsc/player/localization.h \
+ /usr/local/include/rcsc/player/visual_sensor.h \
+ /usr/local/include/rcsc/game_time.h \
+ /usr/local/include/rcsc/common/player_type.h \
+ /usr/local/include/rcsc/rcg/types.h \
+ /usr/local/include/rcsc/soccer_math.h /usr/include/boost/shared_ptr.hpp \
  /usr/include/boost/smart_ptr/shared_ptr.hpp \
  /usr/include/boost/smart_ptr/detail/shared_count.hpp \
  /usr/include/boost/smart_ptr/bad_weak_ptr.hpp \
@@ -281,12 +288,12 @@ src/player/CMakeFiles/sample_player.dir/setplay/bhv_set_play_indirect_free_kick.
  /usr/include/boost/smart_ptr/detail/operator_bool.hpp \
  /usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
  /usr/include/boost/smart_ptr/detail/local_counted_base.hpp \
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h \
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_set_play.h \
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_prepare_set_play_kick.h \
  /home/joao/Documents/RedDragons2D/src/player/setplay/bhv_go_to_placed_ball.h \
  /home/joao/Documents/RedDragons2D/src/player/planner/bhv_planned_action.h \
  /home/joao/Documents/RedDragons2D/src/player/setplay/intention_wait_after_set_play_kick.h \
- /usr/local/include/rcsc/game_time.h \
  /usr/local/include/rcsc/player/soccer_intention.h \
  /usr/include/c++/11/queue /usr/include/c++/11/bits/stl_queue.h \
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/basic_actions.h \
@@ -308,9 +315,6 @@ src/player/CMakeFiles/sample_player.dir/setplay/bhv_set_play_indirect_free_kick.
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/view_wide.h \
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/view_normal.h \
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/body_go_to_point.h \
- /usr/local/include/rcsc/common/player_type.h \
- /usr/local/include/rcsc/rcg/types.h \
- /usr/local/include/rcsc/soccer_math.h \
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/body_kick_one_step.h \
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/body_pass.h \
  /home/joao/Documents/RedDragons2D/src/player/basic_actions/neck_scan_field.h \
@@ -318,9 +322,6 @@ src/player/CMakeFiles/sample_player.dir/setplay/bhv_set_play_indirect_free_kick.
  /usr/local/include/rcsc/player/player_agent.h \
  /usr/local/include/rcsc/player/world_model.h \
  /usr/local/include/rcsc/player/self_object.h \
- /usr/local/include/rcsc/player/abstract_player_object.h \
- /usr/local/include/rcsc/player/localization.h \
- /usr/local/include/rcsc/player/visual_sensor.h \
  /usr/local/include/rcsc/player/fullstate_sensor.h \
  /usr/local/include/rcsc/common/stamina_model.h \
  /usr/local/include/rcsc/player/ball_object.h \

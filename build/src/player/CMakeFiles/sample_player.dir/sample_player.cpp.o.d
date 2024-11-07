@@ -334,6 +334,7 @@ src/player/CMakeFiles/sample_player.dir/sample_player.cpp.o: \
  /usr/include/boost/smart_ptr/detail/operator_bool.hpp \
  /usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
  /usr/include/boost/smart_ptr/detail/local_counted_base.hpp \
+ /home/joao/Documents/RedDragons2D/src/player/planner/cooperative_action.h \
  /home/joao/Documents/RedDragons2D/src/player/planner/field_analyzer.h \
  /usr/local/include/rcsc/geom/voronoi_diagram.h \
  /usr/local/include/rcsc/geom/ray_2d.h \
@@ -917,4 +918,7 @@ src/player/CMakeFiles/sample_player.dir/sample_player.cpp.o: \
  /home/joao/Documents/RedDragons2D/src/player/planner/actgen_action_chain_length_filter.h \
  /usr/include/boost/scoped_ptr.hpp \
  /usr/include/boost/smart_ptr/scoped_ptr.hpp \
- /home/joao/Documents/RedDragons2D/src/player/planner/actgen_passes.h
+ /home/joao/Documents/RedDragons2D/src/player/planner/actgen_passes.cpp \
+ /home/joao/Documents/RedDragons2D/src/player/planner/actgen_passes.h \
+ /home/joao/Documents/RedDragons2D/src/player/planner/strict_check_pass_generator.h \
+ /home/joao/Documents/RedDragons2D/src/player/planner/pass.h
